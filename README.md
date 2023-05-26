@@ -1,16 +1,39 @@
-# #后面要加空格
-
 DessertClicker
 ==================================
 
 Solution code for Android Kotlin Fundamentals Codelab 4.1: Lifecycles and logging.
 
-测试readme基本格式语法
+_您将使用一款名为 DessertClicker 的初始应用。在此应用中，每当用户点按屏幕上的甜点时，该应用就会为用户“购买”相应甜点。应用会在布局中更新已购甜点的数量值，以及用户消费的总金额。_
+
+Introduction
 ------------
 
-**探索生命周期方法并添加基本日志记录信息**
+DessertClicker is a game about making desserts. Press the button, make a dessert,
+earn the big bucks.
 
-_您将使用一款名为 DessertClicker 的初始应用。在此应用中，每当用户点按屏幕上的甜点时，该应用就会为用户“购买”相应甜点。应用会在布局中更新已购甜点的数量值，以及用户消费的总金额。_
+You use this app in the course to explore the Android lifecycle and log messages to
+the Android console (Logcat).
+
+Pre-requisites
+--------------
+
+You need to know:
+- How to open, build, and run apps with Android Studio.
+- What an activity is, and how to create one in your app.
+- What the activity's onCreate() method does, and the kind of operations
+  that are performed in that method.
+- How to create layouts in your activity, and how to update a layout in runtime.
+
+
+Getting Started
+---------------
+
+1. Download and run the app.
+
+
+
+Readme基本语法和书写格式
+---------------
 
 > Text that is a quote
 
