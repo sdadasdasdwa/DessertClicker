@@ -33,7 +33,7 @@ Getting Started
 1. Download and run the app.
 
 
-Questions when running
+Questions when studying
 ---------------
 ````
 ```
