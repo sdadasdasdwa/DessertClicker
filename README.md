@@ -5,6 +5,8 @@ Solution code for Android Kotlin Fundamentals Codelab 4.1: Lifecycles and loggin
 
 _您将使用一款名为 DessertClicker 的初始应用。在此应用中，每当用户点按屏幕上的甜点时，该应用就会为用户“购买”相应甜点。应用会在布局中更新已购甜点的数量值，以及用户消费的总金额。_
 
+![Example Image](img.png)
+
 Introduction
 ------------
 
