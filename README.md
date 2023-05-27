@@ -1,16 +1,74 @@
-# #后面要加空格
-
 DessertClicker
 ==================================
 
 Solution code for Android Kotlin Fundamentals Codelab 4.1: Lifecycles and logging.
 
-测试readme基本格式语法
+_您将使用一款名为 DessertClicker 的初始应用。在此应用中，每当用户点按屏幕上的甜点时，该应用就会为用户“购买”相应甜点。应用会在布局中更新已购甜点的数量值，以及用户消费的总金额。_
+
+Introduction
 ------------
 
-**探索生命周期方法并添加基本日志记录信息**
+DessertClicker is a game about making desserts. Press the button, make a dessert,
+earn the big bucks.
 
-_您将使用一款名为 DessertClicker 的初始应用。在此应用中，每当用户点按屏幕上的甜点时，该应用就会为用户“购买”相应甜点。应用会在布局中更新已购甜点的数量值，以及用户消费的总金额。_
+You use this app in the course to explore the Android lifecycle and log messages to
+the Android console (Logcat).
+
+Pre-requisites
+--------------
+
+You need to know:
+- How to open, build, and run apps with Android Studio.
+- What an activity is, and how to create one in your app.
+- What the activity's onCreate() method does, and the kind of operations
+  that are performed in that method.
+- How to create layouts in your activity, and how to update a layout in runtime.
+
+
+Getting Started
+---------------
+
+1. Download and run the app.
+
+
+Questions when running
+---------------
+````
+```
+定义版本号
+ext {
+    navigationVersion = "2.3.0"
+}
+引入依赖'androidx.navigation.safeargs'
+dependencies{
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigationVersion"
+}
+运行时报错
+Duplicate class androidx.lifecycle.ViewModelLazy found in modules 
+lifecycle-viewmodel-2.4.0-runtime (androidx.lifecycle:lifecycle-viewmodel:2.4.0) and
+lifecycle-viewmodel-ktx-2.2.0-runtime (androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0)
+```
+尝试以下方法来解决问题：
+
+1.执行以下命令获取项目的依赖关系树：`./gradlew app:dependencies`
+  -出现了关系树，但我看不明白，尝试删掉相冲突的依赖但仍没有解决问题最后选择放弃
+
+2.检查项目中的其他依赖项，并确保它们与所需的 androidx.lifecycle 版本兼容。
+ 可以尝试更新这些依赖项的版本，以使用与 androidx.lifecycle:lifecycle-viewmodel:2.4.0 兼容的版本。
+  -我将navigationVersion提升到2.5.0就可以运行成功
+  
+
+
+````
+
+
+
+
+
+
+Readme基本语法和书写格式
+---------------
 
 > Text that is a quote
 
