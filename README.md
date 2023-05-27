@@ -31,6 +31,41 @@ Getting Started
 1. Download and run the app.
 
 
+Questions when running
+---------------
+````
+```
+定义版本号
+ext {
+    navigationVersion = "2.3.0"
+}
+引入依赖'androidx.navigation.safeargs'
+dependencies{
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigationVersion"
+}
+运行时报错
+Duplicate class androidx.lifecycle.ViewModelLazy found in modules 
+lifecycle-viewmodel-2.4.0-runtime (androidx.lifecycle:lifecycle-viewmodel:2.4.0) and
+lifecycle-viewmodel-ktx-2.2.0-runtime (androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0)
+```
+尝试以下方法来解决问题：
+
+1.执行以下命令获取项目的依赖关系树：`./gradlew app:dependencies`
+  -出现了关系树，但我看不明白，尝试删掉相冲突的依赖但仍没有解决问题最后选择放弃
+
+2.检查项目中的其他依赖项，并确保它们与所需的 androidx.lifecycle 版本兼容。
+ 可以尝试更新这些依赖项的版本，以使用与 androidx.lifecycle:lifecycle-viewmodel:2.4.0 兼容的版本。
+  -我将navigationVersion提升到2.5.0就可以运行成功
+  
+
+
+````
+
+
+
+
+
 
 Readme基本语法和书写格式
 ---------------
