@@ -33,7 +33,7 @@ Getting Started
 1. Download and run the app.
 
 
-Questions when studying
+import Dependencies
 ---------------
 ````
 ```
@@ -63,6 +63,15 @@ lifecycle-viewmodel-ktx-2.2.0-runtime (androidx.lifecycle:lifecycle-viewmodel-kt
 
 
 ````
+
+# 1.创建界面状态类
+
+# 2.创建ViewModel
+
+# 3.将应用逻辑和数据转移到ViewModel
+
+# 4.调用ViewModel
+
 
 
 
